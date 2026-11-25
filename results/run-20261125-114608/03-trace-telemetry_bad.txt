@@ -1,0 +1,26 @@
+﻿PS> cqlsh -k demo_practice -e TRACING ON; SELECT COUNT(*) FROM telemetry_bad WHERE device_id='DEMO_SOLAR_001' AND recorded_at>='2026-11-25 08:00:00+0000' AND recorded_at<'2026-11-25 09:00:00+0000'; TRACING OFF;
+
+Now Tracing is enabled
+
+ count
+-------
+    60
+
+(1 rows)
+
+Tracing session: 570d9ab0-e8b5-11f1-94f1-67c496ab8d57
+
+ activity                                                                                                                                                                                          | timestamp                  | source     | source_elapsed | client
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------+------------+----------------+-----------
+                                                                                                                                                                                Execute CQL3 query | 2026-11-25 09:48:17.244000 | 172.20.0.2 |              0 | 127.0.0.1
+ Parsing SELECT COUNT(*) FROM telemetry_bad WHERE device_id='DEMO_SOLAR_001' AND recorded_at>='2026-11-25 08:00:00+0000' AND recorded_at<'2026-11-25 09:00:00+0000'; [Native-Transport-Requests-8] | 2026-11-25 09:48:17.245000 | 172.20.0.2 |           1444 | 127.0.0.1
+                                                                                                                                                 Preparing statement [Native-Transport-Requests-8] | 2026-11-25 09:48:17.246000 | 172.20.0.2 |           1771 | 127.0.0.1
+                                                                                                                                   Executing single-partition query on telemetry_bad [ReadStage-7] | 2026-11-25 09:48:17.247000 | 172.20.0.2 |           3254 | 127.0.0.1
+                                                                                                                                                        Acquiring sstable references [ReadStage-7] | 2026-11-25 09:48:17.247001 | 172.20.0.2 |           3331 | 127.0.0.1
+                                                                                                           Skipped 0/1 non-slice-intersecting sstables, included 0 due to tombstones [ReadStage-7] | 2026-11-25 09:48:17.247002 | 172.20.0.2 |           3431 | 127.0.0.1
+                                                                                                                                 Partition index with 23 entries found for sstable 1 [ReadStage-7] | 2026-11-25 09:48:17.248000 | 172.20.0.2 |           3787 | 127.0.0.1
+                                                                                                                                           Merged data from memtables and 1 sstables [ReadStage-7] | 2026-11-25 09:48:17.249000 | 172.20.0.2 |           5012 | 127.0.0.1
+                                                                                                                                             Read 60 live rows and 0 tombstone cells [ReadStage-7] | 2026-11-25 09:48:17.249001 | 172.20.0.2 |           5104 | 127.0.0.1
+                                                                                                                                                                                  Request complete | 2026-11-25 09:48:17.249675 | 172.20.0.2 |           5675 | 127.0.0.1
+
+Disabled Tracing.

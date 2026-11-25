@@ -1,0 +1,65 @@
+﻿PS> Python, Bytewax and Kafka topic configuration
+
+ Container energy-zorenko-20261125-114608-lab-run-b431443f3ace Creating 
+ Container energy-zorenko-20261125-114608-lab-run-b431443f3ace Created 
+Name: bytewax
+Version: 0.21.1
+Summary: 
+Home-page: 
+Author: 
+Author-email: 
+License: 
+Location: /usr/local/lib/python3.11/site-packages
+Requires: prometheus-client, typing-extensions
+Required-by: 
+---
+Name: kafka-python
+Version: 2.2.15
+Summary: Pure Python client for Apache Kafka
+Home-page: 
+Author: 
+Author-email: Dana Powers <dana.powers@gmail.com>
+License: 
+Location: /usr/local/lib/python3.11/site-packages
+Requires: 
+Required-by: 
+---
+Name: cassandra-driver
+Version: 3.29.2
+Summary: DataStax Driver for Apache Cassandra
+Home-page: http://github.com/datastax/python-driver
+Author: DataStax
+Author-email: 
+License: 
+Location: /usr/local/lib/python3.11/site-packages
+Requires: geomet
+Required-by: 
+---
+Name: confluent-kafka
+Version: 2.16.2
+Summary: Confluent's Python client for Apache Kafka
+Home-page: 
+Author: 
+Author-email: "Confluent Inc." <support@confluent.io>
+License: 
+Location: /usr/local/lib/python3.11/site-packages
+Requires: 
+Required-by: 
+Topic: energy.raw	TopicId: Z-2h-zevQtK1j0cGZL8t4A	PartitionCount: 4	ReplicationFactor: 1	Configs: retention.ms=604800000
+	Topic: energy.raw	Partition: 0	Leader: 1	Replicas: 1	Isr: 1
+	Topic: energy.raw	Partition: 1	Leader: 1	Replicas: 1	Isr: 1
+	Topic: energy.raw	Partition: 2	Leader: 1	Replicas: 1	Isr: 1
+	Topic: energy.raw	Partition: 3	Leader: 1	Replicas: 1	Isr: 1
+Topic: energy.aggregated	TopicId: ABg8DXGXTlKwPIJ8lYiuEQ	PartitionCount: 4	ReplicationFactor: 1	Configs: retention.ms=2592000000
+	Topic: energy.aggregated	Partition: 0	Leader: 1	Replicas: 1	Isr: 1
+	Topic: energy.aggregated	Partition: 1	Leader: 1	Replicas: 1	Isr: 1
+	Topic: energy.aggregated	Partition: 2	Leader: 1	Replicas: 1	Isr: 1
+	Topic: energy.aggregated	Partition: 3	Leader: 1	Replicas: 1	Isr: 1
+Topic: energy.anomalies	TopicId: Q6BH3CyaSXap6IxfugR_jw	PartitionCount: 2	ReplicationFactor: 1	Configs: retention.ms=7776000000
+	Topic: energy.anomalies	Partition: 0	Leader: 1	Replicas: 1	Isr: 1
+	Topic: energy.anomalies	Partition: 1	Leader: 1	Replicas: 1	Isr: 1
+Topic: energy.hourly	TopicId: JPtUm2LiT-KU3hUrSlpGiA	PartitionCount: 4	ReplicationFactor: 1	Configs: retention.ms=7776000000
+	Topic: energy.hourly	Partition: 0	Leader: 1	Replicas: 1	Isr: 1
+	Topic: energy.hourly	Partition: 1	Leader: 1	Replicas: 1	Isr: 1
+	Topic: energy.hourly	Partition: 2	Leader: 1	Replicas: 1	Isr: 1
+	Topic: energy.hourly	Partition: 3	Leader: 1	Replicas: 1	Isr: 1

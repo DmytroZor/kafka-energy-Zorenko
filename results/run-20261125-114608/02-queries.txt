@@ -1,0 +1,157 @@
+﻿PS> cqlsh -f practical2_cassandra/seed.cql and queries.cql
+
+
+ station_id                           | station_name             | station_type | region      | status
+--------------------------------------+--------------------------+--------------+-------------+--------
+ 223e4567-e89b-12d3-a456-426614174001 |          Дніпровська ГЕС |        hydro |   Південний | active
+ 323e4567-e89b-12d3-a456-426614174002 | Сонячна станція Нікополь |        solar |   Південний | active
+ 123e4567-e89b-12d3-a456-426614174000 |             Київська ТЕС |      thermal | Центральний | active
+
+(3 rows)
+
+ station_id                           | commissioned_date | coordinates                      | created_at                      | location | max_capacity_mw | region      | station_name | station_type | status | updated_at
+--------------------------------------+-------------------+----------------------------------+---------------------------------+----------+-----------------+-------------+--------------+--------------+--------+---------------------------------
+ 123e4567-e89b-12d3-a456-426614174000 |        1960-01-01 | {'lat': 50.4501, 'lon': 30.5234} | 2026-11-25 09:47:57.898000+0000 |     Київ |            1400 | Центральний | Київська ТЕС |      thermal | active | 2026-11-25 09:47:57.898000+0000
+
+(1 rows)
+
+ station_name             | station_type | max_capacity_mw | location
+--------------------------+--------------+-----------------+-----------
+          Дніпровська ГЕС |        hydro |            1548 | Запоріжжя
+ Сонячна станція Нікополь |        solar |             246 |  Нікополь
+             Київська ТЕС |      thermal |            1400 |      Київ
+
+(3 rows)
+
+ station_name             | location  | max_capacity_mw
+--------------------------+-----------+-----------------
+          Дніпровська ГЕС | Запоріжжя |            1548
+ Сонячна станція Нікополь |  Нікополь |             246
+
+(2 rows)
+
+ station_name
+-----------------
+ Дніпровська ГЕС
+
+(1 rows)
+
+ station_name             | max_capacity_mw
+--------------------------+-----------------
+          Дніпровська ГЕС |            1548
+             Київська ТЕС |            1400
+ Сонячна станція Нікополь |             246
+
+(3 rows)
+
+ recorded_at                     | power_output_mw | voltage_kv | efficiency_percent
+---------------------------------+-----------------+------------+--------------------
+ 2025-09-17 14:16:30.000000+0000 |          1145.8 |      219.8 |               87.2
+ 2025-09-17 14:15:30.000000+0000 |          1150.5 |      220.1 |               87.5
+
+(2 rows)
+
+ system.avg(power_output_mw) | system.avg(efficiency_percent) | count
+-----------------------------+--------------------------------+-------
+                     1148.15 |                          87.35 |     2
+
+(1 rows)
+
+ alert_id                             | severity | message                     | acknowledged | resolved
+--------------------------------------+----------+-----------------------------+--------------+----------
+ 97e49ae0-93ba-11f0-8a1a-0242ac120002 |  warning | Температура перевищує норму |        False |    False
+
+(1 rows)
+
+ alert_id                             | severity | message
+--------------------------------------+----------+-----------------------------
+ 97e49ae0-93ba-11f0-8a1a-0242ac120002 |  warning | Температура перевищує норму
+
+(1 rows)
+
+ station_id                           | date       | hour                            | avg_efficiency_percent | avg_power_mw | max_power_mw | min_power_mw | total_energy_mwh | uptime_minutes
+--------------------------------------+------------+---------------------------------+------------------------+--------------+--------------+--------------+------------------+----------------
+ 123e4567-e89b-12d3-a456-426614174000 | 2025-09-17 | 2025-09-17 14:00:00.000000+0000 |                  87.35 |      1148.15 |       1150.5 |       1145.8 |          1148.15 |             60
+
+(1 rows)
+
+ station_id                           | recorded_at                     | ttl(power_output_mw)
+--------------------------------------+---------------------------------+----------------------
+ 323e4567-e89b-12d3-a456-426614174002 | 2025-09-17 14:15:00.000000+0000 |               604799
+ 223e4567-e89b-12d3-a456-426614174001 | 2025-09-17 14:15:45.000000+0000 |               604799
+ 123e4567-e89b-12d3-a456-426614174000 | 2025-09-17 14:16:30.000000+0000 |               604799
+ 123e4567-e89b-12d3-a456-426614174000 | 2025-09-17 14:15:30.000000+0000 |               604799
+
+(4 rows)
+
+ system.token(station_id) | station_id                           | station_name
+--------------------------+--------------------------------------+--------------------------
+     -1374893841138573023 | 223e4567-e89b-12d3-a456-426614174001 |          Дніпровська ГЕС
+      -803798562098133021 | 323e4567-e89b-12d3-a456-426614174002 | Сонячна станція Нікополь
+       -44119901388393997 | 123e4567-e89b-12d3-a456-426614174000 |             Київська ТЕС
+
+(3 rows)
+
+ count
+-------
+     3
+
+(1 rows)
+
+Warnings :
+Aggregation query used without partition key
+
+
+ count
+-------
+     4
+
+(1 rows)
+
+Warnings :
+Aggregation query used without partition key
+
+
+ count
+-------
+     1
+
+(1 rows)
+
+Warnings :
+Aggregation query used without partition key
+
+
+CREATE TABLE energy_monitoring.station_telemetry (
+    station_id uuid,
+    time_bucket timestamp,
+    recorded_at timestamp,
+    alert_level int,
+    efficiency_percent double,
+    frequency_hz double,
+    fuel_consumption_rate double,
+    power_output_mw double,
+    status text,
+    temperature_c double,
+    voltage_kv double,
+    PRIMARY KEY ((station_id, time_bucket), recorded_at)
+) WITH CLUSTERING ORDER BY (recorded_at DESC)
+    AND additional_write_policy = '99p'
+    AND bloom_filter_fp_chance = 0.01
+    AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
+    AND cdc = false
+    AND comment = ''
+    AND compaction = {'class': 'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy', 'max_threshold': '32', 'min_threshold': '4'}
+    AND compression = {'chunk_length_in_kb': '16', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+    AND memtable = 'default'
+    AND crc_check_chance = 1.0
+    AND default_time_to_live = 604800
+    AND extensions = {}
+    AND gc_grace_seconds = 864000
+    AND max_index_interval = 2048
+    AND memtable_flush_period_in_ms = 0
+    AND min_index_interval = 128
+    AND read_repair = 'BLOCKING'
+    AND speculative_retry = '99p';
+
+CREATE INDEX alert_level_idx ON energy_monitoring.station_telemetry (alert_level);

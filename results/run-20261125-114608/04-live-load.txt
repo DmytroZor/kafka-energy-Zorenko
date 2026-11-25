@@ -1,0 +1,20 @@
+﻿PS> Simulator, 200 meters, 0.1 s interval, 15 s, 10% injected anomalies
+
+ Container energy-zorenko-20261125-114608-lab-run-0e842607969b Creating 
+ Container energy-zorenko-20261125-114608-lab-run-0e842607969b Created 
+IoT: sent=2000, deliberately injected=207
+IoT: sent=4000, deliberately injected=412
+IoT: sent=6000, deliberately injected=618
+IoT: sent=8000, deliberately injected=803
+IoT: sent=10000, deliberately injected=1018
+IoT: sent=12000, deliberately injected=1196
+IoT: sent=14000, deliberately injected=1412
+IoT: sent=16000, deliberately injected=1574
+IoT: sent=18000, deliberately injected=1780
+IoT: sent=20000, deliberately injected=1980
+IoT: sent=22000, deliberately injected=2174
+IoT: sent=24000, deliberately injected=2386
+IoT: sent=26000, deliberately injected=2579
+IoT: sent=28000, deliberately injected=2790
+IoT: sent=30000, deliberately injected=3018
+Simulator completed: 30000 messages, injected=3018, 200 meters

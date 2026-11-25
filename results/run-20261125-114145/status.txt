@@ -1,0 +1,1 @@
+﻿00-start failed (exit 1). See C:\Users\Dima\PycharmProjects\kafka-energy-Zorenko\results\run-20261125-114145\00-start.txt

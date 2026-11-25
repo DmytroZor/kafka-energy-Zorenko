@@ -1,0 +1,2 @@
+﻿PS> docker logs --tail 18 energy-zorenko-20261125-114608-bytewax
+

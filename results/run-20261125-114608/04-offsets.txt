@@ -1,0 +1,83 @@
+﻿PS> kafka-consumer-groups --describe --all-groups; kafka-get-offsets --topic energy.raw
+
+System.Management.Automation.RemoteException
+Consumer group 'cass-energy-agg-zorenko-v1' has no active members.
+
+GROUP                      TOPIC             PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+cass-energy-agg-zorenko-v1 energy.aggregated 0          10              10              0               -               -               -
+cass-energy-agg-zorenko-v1 energy.aggregated 1          10              10              0               -               -               -
+cass-energy-agg-zorenko-v1 energy.aggregated 2          5               5               0               -               -               -
+System.Management.Automation.RemoteException
+Consumer group 'cass-energy-anomaly-zorenko-v1' has no active members.
+cass-energy-agg-zorenko-v1 energy.aggregated 3          0               0               0               -               -               -
+
+GROUP                          TOPIC            PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+cass-energy-anomaly-zorenko-v1 energy.anomalies 0          1862            1862            0               -               -               -
+System.Management.Automation.RemoteException
+Consumer group 'cass-energy-hourly-zorenko-v1' has no active members.
+cass-energy-anomaly-zorenko-v1 energy.anomalies 1          1278            1278            0               -               -               -
+
+GROUP                         TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+cass-energy-hourly-zorenko-v1 energy.hourly   0          2               2               0               -               -               -
+cass-energy-hourly-zorenko-v1 energy.hourly   1          2               2               0               -               -               -
+cass-energy-hourly-zorenko-v1 energy.hourly   2          1               1               0               -               -               -
+cass-energy-hourly-zorenko-v1 energy.hourly   3          0               0               0               -               -               -
+System.Management.Automation.RemoteException
+Consumer group 'cass-energy-raw-zorenko-v1' has no active members.
+
+GROUP                      TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+cass-energy-raw-zorenko-v1 energy.raw      0          10116           10116           0               -               -               -
+cass-energy-raw-zorenko-v1 energy.raw      1          6702            6702            0               -               -               -
+cass-energy-raw-zorenko-v1 energy.raw      2          7266            7266            0               -               -               -
+cass-energy-raw-zorenko-v1 energy.raw      3          8676            8676            0               -               -               -
+System.Management.Automation.RemoteException
+Consumer group 'console-consumer-13813' has no active members.
+System.Management.Automation.RemoteException
+Consumer group 'console-consumer-18048' has no active members.
+System.Management.Automation.RemoteException
+Consumer group 'console-consumer-27786' has no active members.
+System.Management.Automation.RemoteException
+Consumer group 'console-consumer-28088' has no active members.
+System.Management.Automation.RemoteException
+Consumer group 'console-consumer-37792' has no active members.
+System.Management.Automation.RemoteException
+Consumer group 'console-consumer-44671' has no active members.
+System.Management.Automation.RemoteException
+Consumer group 'console-consumer-58215' has no active members.
+System.Management.Automation.RemoteException
+Consumer group 'console-consumer-58327' has no active members.
+System.Management.Automation.RemoteException
+Consumer group 'console-consumer-6052' has no active members.
+System.Management.Automation.RemoteException
+Consumer group 'console-consumer-68349' has no active members.
+System.Management.Automation.RemoteException
+Consumer group 'console-consumer-78067' has no active members.
+System.Management.Automation.RemoteException
+Consumer group 'console-consumer-82060' has no active members.
+System.Management.Automation.RemoteException
+Consumer group 'energy-monitor-zorenko' has no active members.
+
+GROUP                  TOPIC                      PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+energy-monitor-zorenko power-station-data-zorenko 0          12              50              38              -               -               -
+energy-monitor-zorenko power-station-data-zorenko 1          0               100             100             -               -               -
+energy-monitor-zorenko power-station-data-zorenko 2          0               0               0               -               -               -
+System.Management.Automation.RemoteException
+Consumer group 'energy-monitor-zorenko-replay' has no active members.
+
+GROUP                         TOPIC                      PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+energy-monitor-zorenko-replay power-station-data-zorenko 0          6               50              44              -               -               -
+energy-monitor-zorenko-replay power-station-data-zorenko 1          0               100             100             -               -               -
+System.Management.Automation.RemoteException
+energy-monitor-zorenko-replay power-station-data-zorenko 2          0               0               0               -               -               -
+Consumer group 'p4-probe-1795600117660' has no active members.
+System.Management.Automation.RemoteException
+Consumer group 'perf-consumer-34032' has no active members.
+
+GROUP               TOPIC                      PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+perf-consumer-34032 power-station-perf-zorenko 0          3264            3264            0               -               -               -
+perf-consumer-34032 power-station-perf-zorenko 1          3505            3505            0               -               -               -
+perf-consumer-34032 power-station-perf-zorenko 2          3231            3231            0               -               -               -
+energy.raw:0:10116
+energy.raw:1:6702
+energy.raw:2:7266
+energy.raw:3:8676

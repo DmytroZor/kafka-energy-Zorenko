@@ -1,0 +1,43 @@
+﻿PS> CQL UPDATE, alert resolution by TIMEUUID, COUNTER +1 and DELETE of a demo row
+
+ Container energy-zorenko-20261125-114608-lab-run-9d6a59d58372 Creating 
+ Container energy-zorenko-20261125-114608-lab-run-9d6a59d58372 Created 
+Alert 97e49ae0-93ba-11f0-8a1a-0242ac120002, severity=warning, resolved=False
+Updated existing alert 97e49ae0-93ba-11f0-8a1a-0242ac120002
+
+ alert_id                             | acknowledged | resolved
+--------------------------------------+--------------+----------
+ 97e49ae0-93ba-11f0-8a1a-0242ac120002 |         True |     True
+
+(1 rows)
+
+ station_name             | status
+--------------------------+-------------
+ Сонячна станція Нікополь | maintenance
+
+(1 rows)
+
+ station_name    | max_capacity_mw
+-----------------+-----------------
+ Дніпровська ГЕС |            1548
+    Київська ТЕС |            1400
+
+(2 rows)
+
+ alert_count
+-------------
+           1
+
+(1 rows)
+
+ station_name
+-------------------
+ Temporary lab row
+
+(1 rows)
+
+ station_name
+--------------
+
+
+(0 rows)

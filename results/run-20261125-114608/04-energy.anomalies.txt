@@ -1,0 +1,6 @@
+﻿PS> kafka-console-consumer --topic energy.anomalies --from-beginning --max-messages 3
+
+{"meter_id": "SM-0015", "timestamp": 1795596513466, "region": "Kyiv", "voltage": 222.58, "current": 106.35, "power": 22487.83, "power_factor": 0.95, "frequency": 50.038, "temperature": 24.48, "sample_interval_sec": 1.0, "anomaly_type": "current_surge", "severity": "critical", "deviation_score": 1.772, "detected_at": "2026-11-25T09:48:33.577185+00:00"}
+{"meter_id": "SM-0003", "timestamp": 1795596513466, "region": "Kharkiv", "voltage": 218.2, "current": 77.9, "power": 16147.15, "power_factor": 0.95, "frequency": 50.149, "temperature": 26.42, "sample_interval_sec": 1.0, "anomaly_type": "current_surge", "severity": "warning", "deviation_score": 1.298, "detected_at": "2026-11-25T09:48:33.577546+00:00"}
+{"meter_id": "SM-0010", "timestamp": 1795596514466, "region": "Kyiv", "voltage": 217.87, "current": 69.31, "power": 14346.42, "power_factor": 0.95, "frequency": 49.99, "temperature": 28.51, "sample_interval_sec": 1.0, "anomaly_type": "current_surge", "severity": "warning", "deviation_score": 1.155, "detected_at": "2026-11-25T09:48:34.471809+00:00"}
+Processed a total of 3 messages

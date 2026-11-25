@@ -1,0 +1,6 @@
+﻿PS> kafka-console-consumer --topic energy.aggregated --from-beginning --max-messages 3
+
+{"region": "Kyiv", "window_start": 1795596480000, "window_end": 1795596540000, "avg_voltage": 218.308, "max_voltage": 226.55, "min_voltage": 213.21, "total_power": 83298.27, "avg_power": 6941.523, "active_meters": 4, "readings_count": 12}
+{"region": "Lviv", "window_start": 1795596480000, "window_end": 1795596540000, "avg_voltage": 218.092, "max_voltage": 222.76, "min_voltage": 215.79, "total_power": 60578.24, "avg_power": 5048.187, "active_meters": 4, "readings_count": 12}
+{"region": "Kyiv", "window_start": 1795600080000, "window_end": 1795600140000, "avg_voltage": 220.064, "max_voltage": 273.35, "min_voltage": 165.26, "total_power": 32619096.01, "avg_power": 5909.257, "active_meters": 40, "readings_count": 5520}
+Processed a total of 3 messages

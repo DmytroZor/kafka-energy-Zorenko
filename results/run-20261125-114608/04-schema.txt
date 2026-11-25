@@ -1,0 +1,5 @@
+﻿PS> cqlsh -f practical4_streaming/schema.cql and DESCRIBE TABLES
+
+
+anomalies  anomalies_by_severity  hourly_stats  raw_readings  regional_metrics
+

@@ -1,0 +1,32 @@
+﻿PS> practical1_kafka.consumer with the same group twice, then a new group
+
+Group: energy-monitor-zorenko
+ Container energy-zorenko-20261125-114608-lab-run-336411211c7b Creating 
+ Container energy-zorenko-20261125-114608-lab-run-336411211c7b Created 
+partition=0 offset=0 station=HPP_DNIPRO_01 power=824.22 MW freq=49.865 Hz alarm=False
+partition=0 offset=1 station=HPP_DNIPRO_01 power=823.3 MW freq=49.934 Hz alarm=False
+partition=0 offset=2 station=HPP_DNIPRO_01 power=780.57 MW freq=50.044 Hz alarm=False
+partition=0 offset=3 station=HPP_DNIPRO_01 power=821.51 MW freq=49.764 Hz alarm=True
+partition=0 offset=4 station=HPP_DNIPRO_01 power=789.71 MW freq=49.974 Hz alarm=False
+partition=0 offset=5 station=HPP_DNIPRO_01 power=797.3 MW freq=49.958 Hz alarm=False
+Consumed: 6. Rerun with another --group for independent replay.
+Group: energy-monitor-zorenko
+ Container energy-zorenko-20261125-114608-lab-run-2efaeaedc3e3 Creating 
+ Container energy-zorenko-20261125-114608-lab-run-2efaeaedc3e3 Created 
+partition=0 offset=6 station=HPP_DNIPRO_01 power=838.79 MW freq=50.075 Hz alarm=False
+partition=0 offset=7 station=HPP_DNIPRO_01 power=810.68 MW freq=49.972 Hz alarm=False
+partition=0 offset=8 station=HPP_DNIPRO_01 power=793.16 MW freq=49.949 Hz alarm=False
+partition=0 offset=9 station=HPP_DNIPRO_01 power=798.5 MW freq=50.107 Hz alarm=False
+partition=0 offset=10 station=HPP_DNIPRO_01 power=789.53 MW freq=50.034 Hz alarm=False
+partition=0 offset=11 station=HPP_DNIPRO_01 power=799.55 MW freq=49.986 Hz alarm=False
+Consumed: 6. Rerun with another --group for independent replay.
+Group: energy-monitor-zorenko-replay
+ Container energy-zorenko-20261125-114608-lab-run-5f5201459c71 Creating 
+ Container energy-zorenko-20261125-114608-lab-run-5f5201459c71 Created 
+partition=0 offset=0 station=HPP_DNIPRO_01 power=824.22 MW freq=49.865 Hz alarm=False
+partition=0 offset=1 station=HPP_DNIPRO_01 power=823.3 MW freq=49.934 Hz alarm=False
+partition=0 offset=2 station=HPP_DNIPRO_01 power=780.57 MW freq=50.044 Hz alarm=False
+partition=0 offset=3 station=HPP_DNIPRO_01 power=821.51 MW freq=49.764 Hz alarm=True
+partition=0 offset=4 station=HPP_DNIPRO_01 power=789.71 MW freq=49.974 Hz alarm=False
+partition=0 offset=5 station=HPP_DNIPRO_01 power=797.3 MW freq=49.958 Hz alarm=False
+Consumed: 6. Rerun with another --group for independent replay.

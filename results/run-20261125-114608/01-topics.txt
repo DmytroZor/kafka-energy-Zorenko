@@ -1,0 +1,28 @@
+﻿PS> python create_topics.py; kafka-topics --list and --describe; kafka-configs --describe
+
+ Container energy-zorenko-20261125-114608-lab-run-9d75951f73f6 Creating 
+ Container energy-zorenko-20261125-114608-lab-run-9d75951f73f6 Created 
+CREATED: power-station-data-zorenko partitions=3 replication=1
+CREATED: power-telemetry partitions=3 replication=1
+CREATED: grid-alerts partitions=2 replication=1
+CREATED: energy-consumption partitions=4 replication=1
+CREATED: weather-data partitions=2 replication=1
+CREATED: energy.raw partitions=4 replication=1
+CREATED: energy.aggregated partitions=4 replication=1
+CREATED: energy.anomalies partitions=2 replication=1
+CREATED: energy.hourly partitions=4 replication=1
+energy-consumption
+energy.aggregated
+energy.anomalies
+energy.hourly
+energy.raw
+grid-alerts
+power-station-data-zorenko
+power-telemetry
+weather-data
+Topic: power-station-data-zorenko	TopicId: z26Yzdd9SM-89_oHI2kAQA	PartitionCount: 3	ReplicationFactor: 1	Configs: retention.ms=604800000
+	Topic: power-station-data-zorenko	Partition: 0	Leader: 1	Replicas: 1	Isr: 1
+	Topic: power-station-data-zorenko	Partition: 1	Leader: 1	Replicas: 1	Isr: 1
+	Topic: power-station-data-zorenko	Partition: 2	Leader: 1	Replicas: 1	Isr: 1
+Dynamic configs for topic power-station-data-zorenko are:
+  retention.ms=604800000 sensitive=false synonyms={DYNAMIC_TOPIC_CONFIG:retention.ms=604800000}

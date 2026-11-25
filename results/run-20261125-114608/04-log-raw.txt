@@ -1,0 +1,20 @@
+﻿PS> docker logs --tail 18 energy-zorenko-20261125-114608-raw
+
+raw: committed 20 Kafka messages; total=32420
+raw: committed 20 Kafka messages; total=32440
+raw: committed 20 Kafka messages; total=32460
+raw: committed 20 Kafka messages; total=32480
+raw: committed 20 Kafka messages; total=32500
+raw: committed 20 Kafka messages; total=32520
+raw: committed 20 Kafka messages; total=32540
+raw: committed 20 Kafka messages; total=32560
+raw: committed 20 Kafka messages; total=32580
+raw: committed 20 Kafka messages; total=32600
+raw: committed 20 Kafka messages; total=32620
+raw: committed 20 Kafka messages; total=32640
+raw: committed 20 Kafka messages; total=32660
+raw: committed 20 Kafka messages; total=32680
+raw: committed 20 Kafka messages; total=32700
+raw: committed 20 Kafka messages; total=32720
+raw: committed 20 Kafka messages; total=32740
+raw: committed 20 Kafka messages; total=32760

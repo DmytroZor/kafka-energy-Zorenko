@@ -1,0 +1,202 @@
+﻿PS> docker compose -p energy-zorenko-20261125-114608 build lab
+
+ Image energy-zorenko-20261125-114608-lab Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 595B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 257B done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/python:3.11-slim
+#3 ...
+
+#4 [auth] library/python:pull token for registry-1.docker.io
+#4 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.11-slim
+#3 DONE 2.5s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [1/4] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+#6 resolve docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c 0.0s done
+#6 ...
+
+#7 [internal] load build context
+#7 transferring context: 241B done
+#7 DONE 0.2s
+
+#6 [1/4] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+#6 DONE 0.4s
+
+#6 [1/4] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+#6 sha256:7cb68d39cd284bb0f746ee037b6c487e5cb431f600487f124bca7f6b433851ea 0B / 248B 0.2s
+#6 sha256:7cb68d39cd284bb0f746ee037b6c487e5cb431f600487f124bca7f6b433851ea 248B / 248B 0.2s done
+#6 sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 0B / 14.47MB 0.3s
+#6 sha256:ac4f3e55c8492b4403bd1889a560387dc9a1fadff3bfc48a7b085e0738a5fcb4 0B / 1.29MB 0.2s
+#6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 0B / 29.84MB 0.2s
+#6 sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 2.10MB / 14.47MB 0.5s
+#6 sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 3.15MB / 14.47MB 0.6s
+#6 sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 5.24MB / 14.47MB 0.8s
+#6 sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 6.29MB / 14.47MB 0.9s
+#6 sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 8.39MB / 14.47MB 1.1s
+#6 sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 9.44MB / 14.47MB 1.2s
+#6 sha256:ac4f3e55c8492b4403bd1889a560387dc9a1fadff3bfc48a7b085e0738a5fcb4 1.29MB / 1.29MB 1.3s done
+#6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 3.15MB / 29.84MB 1.2s
+#6 sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 12.58MB / 14.47MB 1.5s
+#6 sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 13.63MB / 14.47MB 1.7s
+#6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 6.29MB / 29.84MB 1.5s
+#6 sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 14.47MB / 14.47MB 1.7s done
+#6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 9.44MB / 29.84MB 1.8s
+#6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 12.58MB / 29.84MB 2.1s
+#6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 14.68MB / 29.84MB 2.3s
+#6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 17.83MB / 29.84MB 2.6s
+#6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 19.92MB / 29.84MB 2.7s
+#6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 22.02MB / 29.84MB 2.9s
+#6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 24.12MB / 29.84MB 3.0s
+#6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 27.26MB / 29.84MB 3.3s
+#6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 29.36MB / 29.84MB 3.5s
+#6 sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 29.84MB / 29.84MB 3.6s done
+#6 extracting sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861
+#6 extracting sha256:40748add9f4f6f944f334cbfc286590d6e93f60fb06f6ee7ffa1b894080ad861 0.7s done
+#6 DONE 4.8s
+
+#6 [1/4] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+#6 extracting sha256:ac4f3e55c8492b4403bd1889a560387dc9a1fadff3bfc48a7b085e0738a5fcb4 0.1s done
+#6 DONE 5.0s
+
+#6 [1/4] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+#6 extracting sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808
+#6 extracting sha256:03bf319e97a9288588235831373f7e1eb9277b2b24375f84d97bd3c6192ba808 0.5s done
+#6 DONE 5.5s
+
+#6 [1/4] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+#6 extracting sha256:7cb68d39cd284bb0f746ee037b6c487e5cb431f600487f124bca7f6b433851ea 0.0s done
+#6 DONE 5.6s
+
+#8 [2/4] WORKDIR /workspace
+#8 DONE 1.1s
+
+#9 [3/4] COPY requirements.txt /tmp/requirements.txt
+#9 DONE 0.1s
+
+#10 [4/4] RUN pip install --no-cache-dir -r /tmp/requirements.txt
+#10 1.339 Collecting bytewax==0.21.1 (from -r /tmp/requirements.txt (line 2))
+#10 1.509   Downloading bytewax-0.21.1-cp311-cp311-manylinux_2_31_x86_64.whl.metadata (15 kB)
+#10 1.569 Collecting kafka-python==2.2.15 (from -r /tmp/requirements.txt (line 3))
+#10 1.607   Downloading kafka_python-2.2.15-py2.py3-none-any.whl.metadata (10.0 kB)
+#10 1.681 Collecting cassandra-driver==3.29.2 (from -r /tmp/requirements.txt (line 4))
+#10 1.721   Downloading cassandra_driver-3.29.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.2 kB)
+#10 1.886 Collecting confluent-kafka<3,>=2.5 (from -r /tmp/requirements.txt (line 5))
+#10 1.927   Downloading confluent_kafka-2.16.2-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (38 kB)
+#10 2.108 Collecting matplotlib<4,>=3.8 (from -r /tmp/requirements.txt (line 6))
+#10 2.147   Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+#10 2.165      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.3/80.3 kB 4.8 MB/s eta 0:00:00
+#10 2.270 Collecting pytest<10,>=8 (from -r /tmp/requirements.txt (line 7))
+#10 2.309   Downloading pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+#10 2.367 Collecting typing-extensions>=4 (from bytewax==0.21.1->-r /tmp/requirements.txt (line 2))
+#10 2.405   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+#10 2.456 Collecting prometheus-client>=0.18 (from bytewax==0.21.1->-r /tmp/requirements.txt (line 2))
+#10 2.498   Downloading prometheus_client-0.26.0-py3-none-any.whl.metadata (2.1 kB)
+#10 2.549 Collecting geomet<0.3,>=0.1 (from cassandra-driver==3.29.2->-r /tmp/requirements.txt (line 4))
+#10 2.590   Downloading geomet-0.2.1.post1-py3-none-any.whl.metadata (1.0 kB)
+#10 2.792 Collecting contourpy>=1.0.1 (from matplotlib<4,>=3.8->-r /tmp/requirements.txt (line 6))
+#10 2.833   Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+#10 2.877 Collecting cycler>=0.10 (from matplotlib<4,>=3.8->-r /tmp/requirements.txt (line 6))
+#10 2.916   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+#10 3.110 Collecting fonttools>=4.28.2 (from matplotlib<4,>=3.8->-r /tmp/requirements.txt (line 6))
+#10 3.150   Downloading fonttools-4.68.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (139 kB)
+#10 3.188      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.9/139.9 kB 3.6 MB/s eta 0:00:00
+#10 3.278 Collecting kiwisolver>=1.3.1 (from matplotlib<4,>=3.8->-r /tmp/requirements.txt (line 6))
+#10 3.318   Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+#10 3.528 Collecting numpy>=1.25 (from matplotlib<4,>=3.8->-r /tmp/requirements.txt (line 6))
+#10 3.567   Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+#10 3.569 Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.11/site-packages (from matplotlib<4,>=3.8->-r /tmp/requirements.txt (line 6)) (26.4)
+#10 3.802 Collecting pillow>=9 (from matplotlib<4,>=3.8->-r /tmp/requirements.txt (line 6))
+#10 3.844   Downloading pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+#10 3.906 Collecting pyparsing>=3 (from matplotlib<4,>=3.8->-r /tmp/requirements.txt (line 6))
+#10 3.945   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+#10 3.994 Collecting python-dateutil>=2.7 (from matplotlib<4,>=3.8->-r /tmp/requirements.txt (line 6))
+#10 4.035   Downloading python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+#10 4.089 Collecting iniconfig>=2 (from pytest<10,>=8->-r /tmp/requirements.txt (line 7))
+#10 4.128   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+#10 4.175 Collecting pluggy<2,>=1.6 (from pytest<10,>=8->-r /tmp/requirements.txt (line 7))
+#10 4.213   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+#10 4.269 Collecting pygments>=2.15 (from pytest<10,>=8->-r /tmp/requirements.txt (line 7))
+#10 4.313   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+#10 4.386 Collecting click (from geomet<0.3,>=0.1->cassandra-driver==3.29.2->-r /tmp/requirements.txt (line 4))
+#10 4.427   Downloading click-8.5.1-py3-none-any.whl.metadata (2.6 kB)
+#10 4.473 Collecting six (from geomet<0.3,>=0.1->cassandra-driver==3.29.2->-r /tmp/requirements.txt (line 4))
+#10 4.512   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+#10 4.585 Collecting tzdata (from python-dateutil>=2.7->matplotlib<4,>=3.8->-r /tmp/requirements.txt (line 6))
+#10 4.624   Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+#10 4.671 Downloading bytewax-0.21.1-cp311-cp311-manylinux_2_31_x86_64.whl (8.0 MB)
+#10 5.249    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.0/8.0 MB 13.9 MB/s eta 0:00:00
+#10 5.291 Downloading kafka_python-2.2.15-py2.py3-none-any.whl (309 kB)
+#10 5.314    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 309.8/309.8 kB 15.3 MB/s eta 0:00:00
+#10 5.355 Downloading cassandra_driver-3.29.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.9 MB)
+#10 5.645    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.9/3.9 MB 13.6 MB/s eta 0:00:00
+#10 5.685 Downloading confluent_kafka-2.16.2-cp311-cp311-manylinux_2_28_x86_64.whl (5.0 MB)
+#10 6.039    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.0/5.0 MB 14.1 MB/s eta 0:00:00
+#10 6.082 Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+#10 6.800    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 13.8 MB/s eta 0:00:00
+#10 6.838 Downloading pytest-9.2.0-py3-none-any.whl (411 kB)
+#10 6.864    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 411.8/411.8 kB 16.5 MB/s eta 0:00:00
+#10 6.902 Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+#10 6.929    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 355.2/355.2 kB 14.1 MB/s eta 0:00:00
+#10 6.967 Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+#10 7.005 Downloading fonttools-4.68.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.5 MB)
+#10 7.408    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 13.7 MB/s eta 0:00:00
+#10 7.450 Downloading geomet-0.2.1.post1-py3-none-any.whl (18 kB)
+#10 7.489 Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+#10 7.531 Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+#10 7.642    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 13.1 MB/s eta 0:00:00
+#10 7.680 Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+#10 8.948    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 15.3 MB/s eta 0:00:00
+#10 8.986 Downloading pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+#10 9.507    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 13.8 MB/s eta 0:00:00
+#10 9.546 Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+#10 9.589 Downloading prometheus_client-0.26.0-py3-none-any.whl (64 kB)
+#10 9.594    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.5/64.5 kB 15.6 MB/s eta 0:00:00
+#10 9.631 Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+#10 9.722    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 14.0 MB/s eta 0:00:00
+#10 9.762 Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+#10 9.772    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.4/126.4 kB 14.4 MB/s eta 0:00:00
+#10 9.812 Downloading python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+#10 9.819    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 92.9/92.9 kB 16.1 MB/s eta 0:00:00
+#10 9.861 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+#10 9.866    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 13.1 MB/s eta 0:00:00
+#10 9.906 Downloading click-8.5.1-py3-none-any.whl (126 kB)
+#10 9.914    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.2/126.2 kB 16.0 MB/s eta 0:00:00
+#10 9.955 Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+#10 9.997 Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+#10 10.02    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 348.2/348.2 kB 14.4 MB/s eta 0:00:00
+#10 10.30 Installing collected packages: kafka-python, tzdata, typing-extensions, six, pyparsing, pygments, prometheus-client, pluggy, pillow, numpy, kiwisolver, iniconfig, fonttools, cycler, confluent-kafka, click, python-dateutil, pytest, geomet, contourpy, bytewax, matplotlib, cassandra-driver
+#10 14.54 Successfully installed bytewax-0.21.1 cassandra-driver-3.29.2 click-8.5.1 confluent-kafka-2.16.2 contourpy-1.3.3 cycler-0.12.1 fonttools-4.68.0 geomet-0.2.1.post1 iniconfig-2.3.1 kafka-python-2.2.15 kiwisolver-1.5.1 matplotlib-3.11.2 numpy-2.4.6 pillow-13.0.0 pluggy-1.7.0 prometheus-client-0.26.0 pygments-2.21.0 pyparsing-3.3.3 pytest-9.2.0 python-dateutil-4.0.0 six-1.17.0 typing-extensions-4.16.0 tzdata-2026.6
+#10 14.54 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#10 14.70 
+#10 14.70 [notice] A new release of pip is available: 24.0 -> 26.3
+#10 14.70 [notice] To update, run: pip install --upgrade pip
+#10 DONE 16.2s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 5.9s done
+#11 exporting manifest sha256:ef951f31257d78295cb70967b4d42079a4ebfa3a5249f835bf56bfb667b77681 0.0s done
+#11 exporting config sha256:8d75fea062e4082020f0569a9a0abab63347fc7f9d18996c727a2203f69c20ac 0.0s done
+#11 exporting attestation manifest sha256:04b4e37e9b6f45e6918f23ecab273677a77b2314f4358f3ed407cab65dbdd501
+#11 exporting attestation manifest sha256:04b4e37e9b6f45e6918f23ecab273677a77b2314f4358f3ed407cab65dbdd501 0.1s done
+#11 exporting manifest list sha256:db08984821831a0bae0a121c938555cd1bea459c8fb8528c0ed0edb64380030a 0.0s done
+#11 naming to docker.io/library/energy-zorenko-20261125-114608-lab:latest
+#11 naming to docker.io/library/energy-zorenko-20261125-114608-lab:latest done
+#11 unpacking to docker.io/library/energy-zorenko-20261125-114608-lab:latest
+#11 unpacking to docker.io/library/energy-zorenko-20261125-114608-lab:latest 3.1s done
+#11 DONE 9.2s
+
+#12 resolving provenance for metadata file
+#12 DONE 0.0s
+ Image energy-zorenko-20261125-114608-lab Built 

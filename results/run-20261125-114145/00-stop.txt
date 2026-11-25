@@ -1,0 +1,8 @@
+﻿PS> docker compose -p energy-zorenko-20261125-114145 stop
+
+ Container energy-zorenko-20261125-114145-cassandra-1 Stopping 
+ Container energy-zorenko-20261125-114145-kafka-1 Stopping 
+ Container energy-zorenko-20261125-114145-kafka-1 Stopped 
+ Container energy-zorenko-20261125-114145-zookeeper-1 Stopping 
+ Container energy-zorenko-20261125-114145-zookeeper-1 Stopped 
+ Container energy-zorenko-20261125-114145-cassandra-1 Stopped 

@@ -1,0 +1,23 @@
+﻿PS> python -m practical3_optimization.generate --days 30 --step-minutes 1
+
+ Container energy-zorenko-20261125-114608-lab-run-d4b443249d70 Creating 
+ Container energy-zorenko-20261125-114608-lab-run-d4b443249d70 Created 
+Inserted 3000 rows in EACH schema
+Inserted 6000 rows in EACH schema
+Inserted 9000 rows in EACH schema
+Inserted 12000 rows in EACH schema
+Inserted 15000 rows in EACH schema
+Inserted 18000 rows in EACH schema
+Inserted 21000 rows in EACH schema
+Inserted 24000 rows in EACH schema
+Inserted 27000 rows in EACH schema
+Inserted 30000 rows in EACH schema
+Inserted 33000 rows in EACH schema
+Inserted 36000 rows in EACH schema
+Inserted 39000 rows in EACH schema
+Inserted 42000 rows in EACH schema
+Completed: 43200 rows/table, 86400 inserts, expected=43200
+Confirmed writes: 14273.5 inserts/s across both tables (6.053 s)
+Bad partition: one growing partition per device
+Good partitions: about 720 hourly buckets per device
+Benchmark reference hour saved: results/p3_generation_metadata.json

@@ -1,0 +1,13 @@
+-- OPTIONAL demonstration from teacher's handout, not executed in default lab.
+-- Requires materialized_views_enabled: true in cassandra.yaml, restart, and manual verification.
+-- Do NOT execute together with main schema: it already defines anomalies_by_severity as a table.
+-- First DROP TABLE energy_monitoring4.anomalies_by_severity after a backup (DESCTRUCTIVE!).
+-- USE energy_monitoring4;
+-- CREATE MATERIALIZED VIEW anomalies_by_severity AS
+-- SELECT region, detected_at, meter_id, anomaly_type, severity, voltage,
+--        current, deviation_score, hour_bucket FROM anomalies
+-- WHERE severity IS NOT NULL AND region IS NOT NULL
+--   AND hour_bucket IS NOT NULL AND detected_at IS NOT NULL AND meter_id IS NOT NULL
+-- PRIMARY KEY ((severity,hour_bucket),detected_at,region,meter_id)
+-- WITH CLUSTERING ORDER BY (detected_at DESC, region ASC, meter_id ASC);
+-- Materialized Views have operational caveats; manual duplicate writes are preferable in this lab.

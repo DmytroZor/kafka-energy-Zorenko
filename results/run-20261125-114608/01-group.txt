@@ -1,0 +1,9 @@
+﻿PS> kafka-consumer-groups --describe --group energy-monitor-zorenko
+
+System.Management.Automation.RemoteException
+Consumer group 'energy-monitor-zorenko' has no active members.
+
+GROUP                  TOPIC                      PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+energy-monitor-zorenko power-station-data-zorenko 0          12              50              38              -               -               -
+energy-monitor-zorenko power-station-data-zorenko 1          0               100             100             -               -               -
+energy-monitor-zorenko power-station-data-zorenko 2          0               0               0               -               -               -

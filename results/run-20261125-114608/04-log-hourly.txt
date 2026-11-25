@@ -1,0 +1,6 @@
+﻿PS> docker logs --tail 18 energy-zorenko-20261125-114608-hourly
+
+Writer mode=hourly, topic=energy.hourly; press Ctrl+C to finish
+hourly: committed 1 Kafka messages; total=1
+hourly: committed 2 Kafka messages; total=3
+hourly: committed 2 Kafka messages; total=5

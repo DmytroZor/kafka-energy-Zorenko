@@ -1,0 +1,7 @@
+metric,telemetry_bad,telemetry_hourly
+SSTable count,1,1
+Number of partitions (estimate),1,720
+Compacted partition minimum bytes,1358103,1917
+Compacted partition mean bytes,1629722,2299
+Compacted partition maximum bytes,1629722,2299
+Space used (live),1046437,1101729

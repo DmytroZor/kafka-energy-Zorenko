@@ -1,0 +1,17 @@
+﻿PS> docker logs --tail 18 energy-zorenko-20261125-114608-agg
+
+Writer mode=agg, topic=energy.aggregated; press Ctrl+C to finish
+agg: committed 1 Kafka messages; total=1
+agg: committed 2 Kafka messages; total=3
+agg: committed 1 Kafka messages; total=4
+agg: committed 1 Kafka messages; total=5
+agg: committed 1 Kafka messages; total=6
+agg: committed 2 Kafka messages; total=8
+agg: committed 2 Kafka messages; total=10
+agg: committed 1 Kafka messages; total=11
+agg: committed 3 Kafka messages; total=14
+agg: committed 1 Kafka messages; total=15
+agg: committed 1 Kafka messages; total=16
+agg: committed 4 Kafka messages; total=20
+agg: committed 1 Kafka messages; total=21
+agg: committed 4 Kafka messages; total=25

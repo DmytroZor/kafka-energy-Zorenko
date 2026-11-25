@@ -1,0 +1,2 @@
+﻿PS> nodetool flush demo_practice
+

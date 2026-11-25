@@ -1,0 +1,4 @@
+﻿PS> docker compose -p energy-zorenko-20261125-114608 start zookeeper cassandra kafka
+
+ Container energy-zorenko-20261125-114608-zookeeper-1 Waiting 
+ Container energy-zorenko-20261125-114608-zookeeper-1 Healthy 

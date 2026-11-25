@@ -1,0 +1,10 @@
+﻿PS> nodetool status; cqlsh --version
+
+Datacenter: datacenter1
+=======================
+Status=Up/Down
+|/ State=Normal/Leaving/Joining/Moving
+--  Address     Load        Tokens  Owns (effective)  Host ID                               Rack 
+UN  172.20.0.2  104.32 KiB  16      100.0%            b4f66cf7-fecf-467b-b238-10a4ddaa973a  rack1
+
+cqlsh 6.1.0
