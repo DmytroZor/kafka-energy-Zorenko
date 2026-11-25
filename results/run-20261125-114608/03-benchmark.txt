@@ -1,7 +1,0 @@
-﻿PS> python -m practical3_optimization.benchmark --iterations 50
-
- Container energy-zorenko-20261125-114608-lab-run-870fa2da3334 Creating 
- Container energy-zorenko-20261125-114608-lab-run-870fa2da3334 Created 
-bad: rows=60: {'avg': 0.9050952799998413, 'p50': 0.8873909999920215, 'p95': 1.0207715501337589, 'p99': 1.2099145899264836, 'min': 0.7828350001091167, 'max': 1.2985599998955877}
-hourly: rows=60: {'avg': 0.8482626399973014, 'p50': 0.8193374999336811, 'p95': 1.0471927498883813, 'p99': 1.2796649998904286, 'min': 0.6722309999531717, 'max': 1.2824579998778063}
-Measured benchmark saved: results/run-20261125-114608/p3_benchmark.csv

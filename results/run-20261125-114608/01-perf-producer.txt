@@ -1,4 +1,0 @@
-﻿PS> kafka-producer-perf-test (10000 records, 1024 bytes, 1000 records/s cap, gzip)
-
-5002 records sent, 1000.4 records/sec (0.98 MB/sec), 1.5 ms avg latency, 165.0 ms max latency.
-10000 records sent, 999.500250 records/sec (0.98 MB/sec), 0.94 ms avg latency, 165.00 ms max latency, 0 ms 50th, 1 ms 95th, 31 ms 99th, 35 ms 99.9th.

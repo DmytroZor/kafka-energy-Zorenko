@@ -1,6 +1,0 @@
-﻿PS> kafka-console-consumer --topic energy.hourly --from-beginning --max-messages 3
-
-{"region": "Kharkiv", "window_start": 1795593600000, "date": "2026-11-25", "hour": 8, "avg_voltage": 220.958, "avg_power": 5226.702, "max_power": 16147.15, "total_energy": 0.017422, "total_readings": 12}
-{"region": "Odesa", "window_start": 1795593600000, "date": "2026-11-25", "hour": 8, "avg_voltage": 217.409, "avg_power": 5976.861, "max_power": 14420.26, "total_energy": 0.019923, "total_readings": 12}
-{"region": "Dnipro", "window_start": 1795593600000, "date": "2026-11-25", "hour": 8, "avg_voltage": 219.162, "avg_power": 4837.922, "max_power": 6190.24, "total_energy": 0.016126, "total_readings": 12}
-Processed a total of 3 messages

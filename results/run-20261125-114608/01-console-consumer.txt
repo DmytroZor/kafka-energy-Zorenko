@@ -1,6 +1,0 @@
-﻿PS> kafka-console-consumer --topic power-station-console-zorenko --from-beginning --max-messages 3
-
-TPP_KYIV_01: 1200 MW
-HPP_DNIPRO_01: 800 MW
-SOLAR_NIKOPOL_01: 200 MW
-Processed a total of 3 messages

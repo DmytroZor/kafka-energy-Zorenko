@@ -1,6 +1,0 @@
-﻿PS> python -m practical4_streaming.visualize_results --region Kyiv
-
-time="2026-11-25T11:54:37+02:00" level=warning msg="Found orphan containers (energy-zorenko-20261125-114608-probe, energy-zorenko-20261125-114608-hourly, energy-zorenko-20261125-114608-anomaly, energy-zorenko-20261125-114608-agg, energy-zorenko-20261125-114608-raw, energy-zorenko-20261125-114608-bytewax) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up."
- Container energy-zorenko-20261125-114608-lab-run-0c21894566b5 Creating 
- Container energy-zorenko-20261125-114608-lab-run-0c21894566b5 Created 
-Saved real-data chart with 5 windows: results/run-20261125-114608/energy_metrics.png

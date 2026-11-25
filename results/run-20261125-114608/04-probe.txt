@@ -1,5 +1,0 @@
-﻿PS> Kafka consumer measurement for live events
-
-energy.raw: 1000 of 1000 messages, first to last in 0.288 s, 3466.2 events/s
-Observed event age in Kafka consumer (NOT full end-to-end Cassandra latency): {'avg': 42.666, 'p50': 17.0, 'p95': 130.0, 'p99': 130.0, 'min': 15, 'max': 130}
-Actual samples saved: results/run-20261125-114608/p4_probe.csv

@@ -1,4 +1,0 @@
-﻿PS> kafka-consumer-perf-test (10000 records)
-
-start.time, end.time, data.consumed.in.MB, MB.sec, data.consumed.in.nMsg, nMsg.sec, rebalance.time.ms, fetch.time.ms, fetch.MB.sec, fetch.nMsg.sec
-2026-11-25 09:47:47:789, 2026-11-25 09:47:48:101, 9.7656, 31.3001, 10000, 32051.2821, 177, 135, 72.3380, 74074.0741

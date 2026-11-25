@@ -1,5 +1,0 @@
-﻿PS> Simulator, 20 meters for 3 s, event times shifted to the previous UTC hour
-
- Container energy-zorenko-20261125-114608-lab-run-c0f2317a0f59 Creating 
- Container energy-zorenko-20261125-114608-lab-run-c0f2317a0f59 Created 
-Simulator completed: 60 messages, injected=5, 20 meters

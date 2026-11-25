@@ -1,6 +1,0 @@
-﻿PS> kafka-console-consumer --topic energy.raw --from-beginning --max-messages 3
-
-{"meter_id": "SM-0002", "timestamp": 1795596513466, "region": "Odesa", "voltage": 215.13, "current": 29.34, "power": 5995.92, "power_factor": 0.95, "frequency": 49.88, "temperature": 25.47, "sample_interval_sec": 1.0}
-{"meter_id": "SM-0007", "timestamp": 1795596513466, "region": "Odesa", "voltage": 216.75, "current": 31.86, "power": 6560.32, "power_factor": 0.95, "frequency": 50.08, "temperature": 22.88, "sample_interval_sec": 1.0}
-{"meter_id": "SM-0009", "timestamp": 1795596513466, "region": "Dnipro", "voltage": 213.07, "current": 27.52, "power": 5571.19, "power_factor": 0.95, "frequency": 50.068, "temperature": 23.9, "sample_interval_sec": 1.0}
-Processed a total of 3 messages
